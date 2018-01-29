@@ -282,7 +282,7 @@ function idChecker($d,$data, $possibleIdentifiers) {
     }
 
     // echo "<br><br><br><b><u>".$max." | ".$score."</u></b>";
-    return ['percentage' => ((double)$score/(double)getMax($possibleIdentifiers))*100, 'score' => (double)$score, 'max' => (double)getMax($possibleIdentifiers)];
+    return array('percentage' => ((double)$score/(double)getMax($possibleIdentifiers))*100, 'score' => (double)$score, 'max' => (double)getMax($possibleIdentifiers));
 }
 
 

@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="./main.css">
 
         <meta charset="UTF-8">
-      <meta name="description" content="Portfolio of Roy Oosterlee. Last update: 2018">
-      <meta name="keywords" content="HTML,CSS,PHP,JavaScript,WebDeveloper,NodeJS,React">
+      <meta name="description" content="Portfolio of Roy Oosterlee. I do Web Development (HTML,CSS,PHP,JavaScript,NodeJS,React,...) I also do MYSQL,Firebase,MongoDB">
+      <!-- <meta name="keywords" content="HTML,CSS,PHP,JavaScript,WebDeveloper,NodeJS,React"> -->
       <meta name="author" content="Roy Oosterlee">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,6 +15,8 @@
         <script src="./line.js" charset="utf-8"></script>
         <script src="./main.js"></script>
         <?php
+            error_reporting(E_ALL);
+            ini_set('display_errors', 1);
             include_once "main.php";
         ?>
     </head>
