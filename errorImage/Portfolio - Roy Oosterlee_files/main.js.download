@@ -1,0 +1,123 @@
+window.onload = function() {
+    resizeItems();
+    setupLines();
+    setupJavascript();
+}
+
+window.onresize = function() {
+    resizeItems();
+};
+
+window.onscroll = function() {
+    var nav = document.querySelector('.navigation');
+    var navFixed = document.querySelector('.__fixed');
+    if (window.scrollY > nav.clientHeight) {
+        navFixed.style.visibility = 'visible';
+        navFixed.style.opacity = '1';
+        navFixed.style.transition = 'opacity 1s linear';
+        nav.style.visibility = 'hidden';
+    } else {
+        navFixed.style.visibility = 'hidden';
+        navFixed.style.opacity = '0';
+        navFixed.style.transition = 'opacity 0.2s ease-out';
+        nav.style.visibility = 'visible';
+    }
+};
+
+function setupLines() {
+    var elements = document.querySelectorAll('.line');
+    for (var i = 0; i < elements.length; i++) {
+        window["line"+i] = new Line(elements[i]);
+    }
+}
+
+
+function setupJavascript() {
+    var images = document.querySelectorAll('img');
+    for (var i = 0; i < images.length; i++) {
+        if (images[i].src == window.location.href) {
+            images[i].src = './errorImage/no.png';
+        }
+    }
+}
+
+
+function resizeItems() {
+    var nav = document.querySelector('.navigation');
+    var navHeightO = nav.clientHeight;
+    var navWidthO = nav.clientWidth;
+    var navHeight = 0;
+    var navWidth = 0;
+
+
+    var page_wrapper = document.querySelector('.page_wrapper');
+    // var page = document.querySelector('.page');
+    var background = document.querySelector('.background');
+    var bg_overlay = document.querySelector('.bg_overlay');
+
+    page_wrapper.style.width = window.innerWidth+'px';
+    page_wrapper.style.height = window.innerHeight+'px';
+
+    // page.style.width = window.innerWidth+'px';
+    // page.style.height = (window.innerHeight-navHeight)+'px';
+
+    background.style.width = (window.innerWidth-17)+'px';
+    background.style.height = (window.innerHeight-navHeight)+'px';
+
+    background.style.marginTop = -navHeightO+'px';
+
+    bg_overlay.style.width = (window.innerWidth-17)+'px';
+    bg_overlay.style.height = (window.innerHeight-navHeight)+'px';
+
+
+    var blocks = document.querySelectorAll('.block');
+
+    if (blocks.length > 0) {
+        var windowWidth = window.innerWidth;
+        var blockAmount = blocks.length;
+        var blockWidth = (blocks[0].clientWidth == blocks[1].clientWidth) ? blocks[0].clientWidth : 250;
+
+        var fit = Math.floor(windowWidth/blockWidth);
+
+        // var blockHeightMax = 300;
+        //
+        // var lastBlockHeight = undefined;
+        //
+        // for (var i = 0; i < blocks.length; i++) {
+        //     if (!lastBlockHeight || blocks[i].clientHeight > lastBlockHeight) {
+        //         blockHeightMax = blocks[i].clientHeight;
+        //     }
+        //     lastBlockHeight = blocks[i].clientHeight;
+        // }
+        //
+        // console.warn(blockHeightMax);
+
+        for (var i = 0; i < blocks.length; i++) {
+            // blocks[i].style.height = blockHeightMax+'px';
+            if (fit == 0 || fit == 1) {
+                blocks[i].style.marginLeft = 5+'px';
+            } else {
+                if (blockAmount < fit) {
+                    blocks[i].style.marginLeft = ((100/blockAmount)/blockAmount)*1.35+"%";
+                } else {
+                    blocks[i].style.marginLeft = ((100/fit)/fit)+'%';
+                }
+            }
+        }
+    }
+
+}
+
+function checkCached(event) {
+    if (event.persisted) {
+        alert("Page is cached and cannot load updates. Please empty your cache history.");
+    } else {
+        console.log("Page is not cached");
+    }
+}
+
+
+function to(selector) {
+    var element = document.querySelector(selector);
+    console.log({e: element});
+}
