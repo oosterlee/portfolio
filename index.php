@@ -295,7 +295,7 @@
                 <footer>Footer! <a href="https://icons8.com">Icons by Icons8</a></footer>
             </div>
         </div>
-        <div class="debug_output">
+        <div class="debug_output" style="display: none;">
 
         </div>
     </body>
