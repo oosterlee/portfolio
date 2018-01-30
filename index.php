@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
     <head>
         <meta charset="utf-8">
         <title>Portfolio - Roy Oosterlee</title>
         <link rel="stylesheet" href="./main.css">
 
+
+        <meta property="og:title" content="Portfolio Roy Oosterlee">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="http://24868.hosts.ma-cloud.nl/bewijzenmap/Portfolio/">
+        <meta property="og:image" content="http://24868.hosts.ma-cloud.nl/bewijzenmap/Portfolio/images/PortfolioImage.png">
+
         <meta charset="UTF-8">
-      <meta name="description" content="Portfolio of Roy Oosterlee. I do Web Development (HTML,CSS,PHP,JavaScript,NodeJS,React,...) I also do MYSQL,Firebase,MongoDB">
-      <!-- <meta name="keywords" content="HTML,CSS,PHP,JavaScript,WebDeveloper,NodeJS,React"> -->
-      <meta name="author" content="Roy Oosterlee">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio of Roy Oosterlee. I do Web Development (HTML,CSS,PHP,JavaScript,NodeJS,React,...) I also do MYSQL,Firebase,MongoDB">
+        <!-- <meta name="keywords" content="HTML,CSS,PHP,JavaScript,WebDeveloper,NodeJS,React"> -->
+        <meta name="author" content="Roy Oosterlee">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta http-equiv="cache-control" content="no-cache" />
         <script src="./line.js" charset="utf-8"></script>
