@@ -1,1 +1,5 @@
-Portfolio of Roy Oosterlee. I do Web Development (HTML,CSS,PHP,JavaScript,NodeJS,React,...) I also do MYSQL,Firebase,MongoDB
+User-agent: *
+Disallow: /search/
+Disallow: /private/
+
+Sitemap: http://24868.hosts.ma-cloud.nl/bewijzenmap/Portfolio/Sitemap.xml

@@ -6,6 +6,13 @@
         <link rel="stylesheet" href="./main.css">
 
 
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@royoost">
+        <meta name="twitter:title" content="Portfolio Roy Oosterlee">
+        <meta name="twitter:description" content="Portfolio from Roy Oosterlee.">
+
+        <link rel="publisher" href="https://plus.google.com/+38929687390">
+
         <meta property="og:title" content="Portfolio Roy Oosterlee">
         <meta property="og:type" content="article">
         <meta property="og:url" content="http://24868.hosts.ma-cloud.nl/bewijzenmap/Portfolio/">
@@ -298,6 +305,16 @@
                         <br><h5>Mail: (roy@famoosterlee.nl)</h5> <a href="mailto:roy@famoosterlee.nl" title="Normal mail"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK5SURBVGhD7Zj9TtNQGMZ3LyZ6GRhvx+i/OCRqCInfEb8GGhhb2AKOOESyQZDNyCCsm2thzLas05sw/kXi8TyH02Wrp0vZ2q2B8yS/ZFnf8z7P27SnTSNSUlJSUlJSl0FHxq9rqmFNaIYVU03r3ShhGWgWZOLxvEk1Wrc1s3VKISHjtGZYt3jM3jo0Wzfo9H8FTUIBy2ZY13lcd6XzhWq5bgibhAFkS+WKCo/rrocLy38ezC6Rrb2qsNEoQSZkQ0Ye113PEqu/78zMk+jLBZJY3yb0mhQ2HSbIkPy8zTIhGzLyuO6qNE4a89lNtgA8WcyQknosNBgG8H6ayLTzIBsy8rjuottdHQ02vpXJvbcJtnjyzSJZK+4LjYIEnvBGBmRBJvyPjDyuu+xBwL72gzxPrrbPxmxmg1QbJ11mQUDPOPOyfZEBWezj5x6ELaLXZzq3074+p9+nSUFR28f9pqBozANe8IQ3MnTW9DWIzZeDGpmaSzGDCWqwvPn1P4NBQC/0RG94wAuewtpBBgGVY5PEVtaZEZhZypKDui6sPQ/ogV52X3jAS1QLBh7EJruzR+6+OrsJ78eSJF9ShHVeyJcqrAd6oSd6i+o68W0QsFs7Io/iKyxAlBJf2yLf9aawVgRqsQZr0QO90FNU68TXQYAzzGOPYVCD2n5Pgu+D2OR2Fc+XB45Nvo6zWqzBWlFdLwIbBOCGfZH6yAIC5w3r3ChQ2+9GEegg4GwLLXZvoeUao3vrLg60dQc+iA0emJ0PNb8fpkMbBOBVZq7jNQO//Xq9GeogNp/oix8QHeuXkQwSBHKQsHHJBjFammhxmEBGHtddtDDjXBg26CAfeFx34eMXfeqG+gOdqjfHeNzewmdJuiiUn0w107rJY3rTof7zqqpb0bB8xKZDjFebzSs8npSUlJSUlNQFViTyD+G3jecel3H9AAAAAElFTkSuQmCC"></a>
                         <br><h5>Gmail: (roymcraft@gmail.com)</h5> <a href="mailto:roymcraft@gmail.com" title="Gmail"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARbSURBVGhD7ZjbT1xVFMZ5M/E/8C9pE31oU/qkDZamWsNEilWrKEpomhIvNGmot15iiVqNt1YxUtISIibY2BpJJCkMaimMZWa4zH3OPgyXysyjLPc3OefMnpk1cGY4h/JwVvJLJsPa3/q+OXvvAeq88sorr7zaEbV+6dIjWirlSyQS7+5E4A0eDbt8ab1XA6K5iTJd71A2maBcLrejgCd4E80+Er3fTxm2iyt9re+W1vAkmYimZ2n1t9us4MMAXuBJ9Sg93zTsF0q0t62rTSaZ8x9SLpNhxbcFORseOG+i400y7BdKHGtmm4F+7Cg9mPDzg1wEMzGb8wTg2bBfqNTJE2yzxdNP0fKXX1B2dZUd6iSYgVmYyXoxgGfDfqH89fXr6Y52doGK3tZKa8EZ1oATQBszuNkq6RPtNLF/f3mQ8T171sd37aLIG22kPdPILjYRhw/SSv81ymWzrJmakFrQhDY300J6g0d49e/dWzkICBxqJNH6Mi+ksPjWKVqLxXhjVQANaHEzVOAJ3kyfmwYBE088TukL50g7eIAVtXjuMD349SZr0A5YCw1W2wQeLp7Pe1I92goCAv39FL19i8QLlW80k6UPzlJW11mzHOjFGk5LBbOTI79TcGCgyBuwHWTmxg0KBoMUvjdJ4r1udpCK3vI8/Tt2hzWugh70choq+vtnKSYPfyQS2VoQLJ6fn8+HAYmB66Qd2WQb4Jr+/FPKrqyUBcB7+Nlm12p+xk+D+QAmWw4CkdnZWSvMPL6kTnbwBhT01uO0Fpi2QuA13uN6VaAdn7xbFMKxICAcDlthgvfvU/qbr0hrbGDNmIhDDbTy4w958JrrsZBa+tVvKSJ3gBrAxLEgCwsLFAqFCmEk0ZEREsdf5I1VATSSo6NFxktxLAhQz4vJbCBA4sJHrEE76BfPUVR+QOocDkeDAC4MSPw8RMJ3hDXLke/9ZbhMvxKOBwHq4VeZ++tPEja+ofW3Oyk+PcVqV8KVIKDo8KvMzFC69zv2dya8p8uDH5HnjdPcCNeCgIphJJHRP0i89ooVQn/9VUqOj7E6dnA1CG4yLoRJSF4EWs/HpH/SQ7G5OVbDLq4GATj8pdeyCZ5YPB5n11WL60HAnPy0S0PgaUWjUba/FrYlCFBvMicDmGxbEIAn49RWKmXbgiQSCVpcXHTlaQDXg8C4pmm0vLycx60wrgaJyb+1M5mMFcIEwbj+reBaEGylpaWlshAmyWSSXVcrrgRRt9JGOHnwbQfx19f/V9pYGqTSVqoEep06L1wQ9h90fzc1ZUob1SCpVIo1uxm6rhcZqhUuyN2WlvIg011dp8Z37y5qNIMIIViTdkmn02XGqqUsiPQa6uu7Y9gvrsnOzh7/vn3WFgsPDla1lTYClwNn0C5qEGyp4JUrC4ZtviZOn350qrv7wL0zZ3zRsbGj8mD7HOIlefg/k+fsci1EJie/lmGuh4eGLv8zPPyYYdcrr7zyyquHWXV1/wNpZ38BW+CXNQAAAABJRU5ErkJggg=="></a>
                     </div>
+                </div>
+
+                <div>
+                    Share:
+                    <p><a href="https://www.facebook.com/sharer/sharer.php?u=marcoosterlee.no-ip.org%2FPortfolio">Facebook</a></p>
+                    <p><a href="https://twitter.com/intent/tweet?url=marcoosterlee.no-ip.org%2FPortfolio&text=Portfolio%20-%20Roy%20Oosterlee">Twitter</a></p>
+                    <p><a href="https://plus.google.com/share?url=marcoosterlee.no-ip.org%2FPortfolio">Google+</a></p>
+                    <p><a href="http://www.linkedin.com/shareArticle?mini=true&url=marcoosterlee.no-ip.org%2FPortfolio&title=Portfolio%20-%20Roy%20Oosterlee">LinkedIn</a></p>
+                    <p><a href="http://pinterest.com/pin/create/button/?url=marcoosterlee.no-ip.org%2FPortfolio&description=Portfolio%20-%20Roy%20Oosterlee">Pinterest</a></p>
+                    <p><a href="http://www.tumblr.com/share?v=3&u=marcoosterlee.no-ip.org%2FPortfolio&t=Portfolio%20-%20Roy%20Oosterlee">Tumblr</a></p>
                 </div>
 
                 <footer>Footer! <a href="https://icons8.com">Icons by Icons8</a></footer>
