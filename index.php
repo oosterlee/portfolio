@@ -5,6 +5,10 @@
         <title>Portfolio - Roy Oosterlee</title>
         <link rel="stylesheet" href="./main.css">
 
+        <link rel="alternate" hreflang="en" href="http://24868.hosts.ma-cloud.nl/bewijzenmap/Portfolio/en">
+        <link rel="alternate" hreflang="es" href="http://24868.hosts.ma-cloud.nl/bewijzenmap/Portfolio/es">
+        <link rel="alternate" hreflang="de" href="http://24868.hosts.ma-cloud.nl/bewijzenmap/Portfolio/de">
+        <link rel="alternate" hreflang="x-default" href="http://24868.hosts.ma-cloud.nl/bewijzenmap/Portfolio/">
 
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@royoost">
@@ -24,41 +28,58 @@
         <meta name="author" content="Roy Oosterlee">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta http-equiv="cache-control" content="no-cache" />
-        <script src="./line.js" charset="utf-8"></script>
-        <script src="./main.js"></script>
+        <!-- <meta http-equiv="cache-control" content="no-cache" /> -->
+        <script src="./line.js" charset="utf-8" async></script>
+        <script src="./main.js" async></script>
         <?php
             error_reporting(E_ALL);
             ini_set('display_errors', 1);
             include_once "main.php";
         ?>
+
+        <style>
+        @media (max-width: 768px) {
+          body {
+            max-width: 100%;
+          }
+        }
+        </style>
+
+        <style>
+        @media print {
+          body {
+            max-width: 100%;
+          }
+        }
+        </style>
+
     </head>
     <body onpageshow="checkCached(event)">
         <div class="page_wrapper">
             <div class="navigation">
                 <ul>
-                    <li class="active"><a href="javascript:to('#home')">Home - Portfolio</a></li>
-                    <li class=""><a href="javascript:to('#projects')">Projects</a></li>
-                    <li class=""><a href="javascript:to('#aboutme')">About me</a></li>
-                    <li class=""><a href="javascript:to('#contact')">Contact</a></li>
+                    <li class="active"><a href="javascript:to('#home')" rel="nofollow">Home - Portfolio</a></li>
+                    <li class=""><a href="javascript:to('#projects')" rel="nofollow" rel="nofollow">Projects</a></li>
+                    <li class=""><a href="javascript:to('#aboutme')" rel="nofollow" rel="nofollow">About me</a></li>
+                    <li class=""><a href="javascript:to('#contact')" rel="nofollow" rel="nofollow">Contact</a></li>
                 </ul>
             </div>
             <div class="navigation __fixed">
                 <ul>
-                    <li class="active"><a href="javascript:to('#home')">Home - Portfolio</a></li>
-                    <li class=""><a href="javascript:to('#projects')">Projects</a></li>
-                    <li class=""><a href="javascript:to('#aboutme')">About me</a></li>
-                    <li class=""><a href="javascript:to('#contact')">Contact</a></li>
+                    <li class="active"><a href="javascript:to('#home')" rel="nofollow" rel="nofollow">Home - Portfolio</a></li>
+                    <li class=""><a href="javascript:to('#projects')" rel="nofollow" rel="nofollow">Projects</a></li>
+                    <li class=""><a href="javascript:to('#aboutme')" rel="nofollow" rel="nofollow">About me</a></li>
+                    <li class=""><a href="javascript:to('#contact')" rel="nofollow" rel="nofollow">Contact</a></li>
                 </ul>
             </div>
             <div class="page">
                 <div class="background" id="home">
                     <div class="bg_overlay">
-                        <!-- <img src="" alt="" class="myselfPhoto"> -->
+                        <!-- <img src="" alt="alt" class="myselfPhoto"> -->
                         <h1>Portfolio - Roy Oosterlee.</h1><br>
-                        <h4>Check out my <a href="javascript:to('#projects')">projects</a> and <a href="javascript:to('#aboutme')">skills</a> down below!</h4>
+                        <h4>Check out my <a href="javascript:to('#projects')" rel="nofollow" rel="nofollow">projects</a> and <a href="javascript:to('#aboutme')" rel="nofollow" rel="nofollow">skills</a> down below!</h4>
                         <!-- <div class="foot">
-                            <a href="#content"><p><span class="lines">||</span><br>v</p></a>
+                            <a href="#content" rel="nofollow" rel="nofollow"><p><span class="lines">||</span><br>v</p></a>
                         </div> -->
                     </div>
                 </div>
@@ -87,7 +108,7 @@
 
                         <div class="block">
                             <h1>Portfolio</h1>
-                            <img src="./images/PortfolioImage.png" alt="">
+                            <img src="./images/PortfolioImage.png" alt="alt">
                             <p>Portfolio - Roy Oosterlee. Made for school and work. I designed it myself and coded it all. Made with HTML, CSS, JavaScript. <br><br><span class="moreinfohover">[Hover for more info]</span></p>
                             <div class="__hover">
                                 <button type="button" name="button" class="btn">Read more</button>
@@ -117,7 +138,7 @@
                         </div>
                         <div class="block">
                             <h1>Crazy Eights</h1>
-                            <img src="./images/nodeJSCardGameImage.png" alt="">
+                            <img src="./images/nodeJSCardGameImage.png" alt="alt">
                             <p>I made Crazy Eights becouse i was on a vacation and the weather was not all that good. Made with HTML, CSS, JavaScript (NodeJS) <br><br><span class="moreinfohover">[Hover for more info]</span></p>
                             <div class="__hover">
                                 <button type="button" name="button" class="btn">Read more</button>
@@ -144,8 +165,8 @@
 
                         <!-- TODO: ADD THE CODE REPOSETORY FOR GITHUB -->
                         <div class="block">
-                            <h1>Bomberman</h1><a href="https://github.com/oosterlee/Bomberman" target="_blank" class="showcode">(show Code)</a>
-                            <img src="./images/BombermanImage.png" alt="">
+                            <h1>Bomberman</h1><a href="https://github.com/oosterlee/Bomberman" target="_blank" class="showcode" rel="nofollow" rel="nofollow">(show Code)</a>
+                            <img src="./images/BombermanImage.png" alt="alt">
                             <p>Bomberman is a game i made for a school project in the first week i came to school. Made with HTML, CSS, JavaScript (P5.js library) <br><br><span class="moreinfohover">[Hover for more info]</span></p>
                             <div class="__hover">
                                 <button type="button" name="button" class="btn">Read more</button>
@@ -169,8 +190,8 @@
                         </div>
                         <!-- TODO: ADD THE CODE REPOSETORY FOR GITHUB -->
                         <div class="block">
-                            <h1>Instaclone</h1><a href="https://github.com/oosterlee/InstaClone" target="_blank" class="showcode">(show Code)</a>
-                            <img src="./images/instacloneImage.png" alt="">
+                            <h1>Instaclone</h1><a href="https://github.com/oosterlee/InstaClone" target="_blank" class="showcode" rel="nofollow" rel="nofollow">(show Code)</a>
+                            <img src="./images/instacloneImage.png" alt="alt">
                             <p>Instaclone is a clone of Instagram. You can post photos and add comments to the photo. I made this for a school project.<br><br><span class="moreinfohover">[Hover for more info]</span></p>
                             <div class="__hover">
                                 <button type="button" name="button" class="btn">Read more</button>
@@ -193,7 +214,7 @@
 
                         <div class="block">
                             <h1>Login Template</h1>
-                            <img src="./images/logintemplateImage.png" alt="">
+                            <img src="./images/logintemplateImage.png" alt="alt">
                             <p>I made a template becouse i used a login screen much and had to redo everything becouse of the new project i started.<br><br><span class="moreinfohover">[Hover for more info]</span></p>
                             <div class="__hover">
                                 <button type="button" name="button" class="btn">Read more</button>
@@ -300,24 +321,24 @@
                         <h1>Contact</h1>
                         <p class="line" data-px="35%" data-animate="true" data-gradient="linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB)"></p>
                         <p></p><br><br>
-                        <br><h5>Skype: (royoost)</h5> <a href="skype:royoost?add" onclick="alert('I rarely use skype. Better to use Discord or Email.')" title="Skype (Not in use)"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVNSURBVGhD7Vnpb1RVFH/OqKlLVKJgjB9QIyZq4pL4ySURMeoHrSYaBGtMXD5bSKNGE0Mwxj9AQY1QaqIyb6DD4EJbkLWUzZDiggSkCsEFFwJM75t9uf7O69HOcl7ffTPTCR/ml/wyk+l95/7Ou+eec+6t1UYbbTQRn52dEbJVV9hWvfgcBPeDu8NRJ4LPRVYkfR2PPEcRc66B2OXhqMrhU3vSVqVQVK0HF2PsilDU+RrcBY6EbGcTfluF769h3INWtHQRW28NwnbyibDtjIvCG6JKk9PhSPJxa4kO8XTTAwoXTFiUhTSVRzBXl6X1eTx180BvikJFmHTaiLAbtvoTc1hCE7BaXY1wUtJkLWACq7OAlTQGOPG+MEHrSEnDVj0sp07Ez1wBQ1lxghYTme5VVhUctOkko0F4w5dJvXB3Rr/1Y06/+1NOfzCW0+8cyunn92X0rQMp8RmRE+l8PksLBjzcKxr14QVrHN21J6NHTxe1Hw6PF3XPgay+LCbbqmKirgQwUbhEg56cFU/qLX8WWKY5TiRL+qHtadFmOZHNdgROzVjKUcmYFy9e6xitghdyePTJERNn1DMs0QzYI9Q7icYkLj2YY0mVIIG0Sqt+yeuPj+X1ZnzPePh7KlvSV65Livb/p+0cDtQB4KFIjREPXoh98XuqxHImse9UUV+PDV89/iqE4IdjeR5ViUeH/VclHE12skx/YAm7ZSO1vPGrJMuoxC0+menN77M8chL3bzXaKzGWaQC04qatyX1b0ixjElmEz/nC2Gq+8V3WDb8CFnTZ0ZzRM9RoWn26g5X6w+1KRUOVvH0oxfIr0T2aFcdX85L+iWQh/c2TtprLMv0BR3CeEIxUcQY2aLF2i7gYOllwiyKlZunZeknnGZbpD3i9UjIicSMETwXy81Ci6GavF1DZbw5S2SVCG8v0B1ZkSDQi8I6NKZ0MWAtPpku6F47dszm4U9A2wDL9geq+UzLixXnb0q64erDhj4K+9nPz8CNtLNMfQR0hzsReeBtNolRX/HBUFY2dcdsVU6C6D0pGTEjN490ImSU/ZPXWvwo6ZRh2637Ni/aqSRmVZfoDG6pPMlIPKcU+gNCjVmbkn4K7+SXQ7zdtMNozy1mmPyjFCQaaQspaBzyazJe+yYjPlBMr8jLL9Ec4ouZJRiQuQK0Y/rugB7FpKaSkMdW8zaOQLj3oX0gDhRZdniG8MpKhctJpj1qM/3A2V3KrvTS2nNQ8SnjlW4OOAO2T1Z+azUr9Ac/joqEyPo3VqMZxHJZmfzF1BnoRISShc6dJB+yuSjfL9Id7wygYKeedKIYSyJlHdqRrGkHKaM/tzYgFVOVL+lIkhvLxU/BTlmkAHGLwwJEqAzWkFOuFn52Sjv9WcM8gnxzP6zHUCy/QRYVkXyId/lilGbCEz0qGyklhdAyCGwElC0rTkn2J0DXKEg2BAz9S8bBkrJxUlanbrQfRE3m3i5bsehGODLHCAOhPzDG9jX94e1qvhbC0j090oFqPkDO5QRFpq49YXTDgDcyntCcaFdiBw9Jdm1LuxqZD1us4DdI9FmWre3GqDLCpRWKP1H83TNeXktGW01ZZa83py1lWfcCb6AmyMtNC23mP5TSGcHT8KRhM1EzQCtrOGSumZrGUJgAJgM4F4mTTRVsVAt1rGcNNzWoh3QCKEzeVqoi5zNuSuuB2AMlOrFCM7p1kIQ0xgXbpMZ6tRejTHQiBuW6Gs9VKOmnCwRGXE/+eXoE3uxiM+yYN6r5tZ5kVHZ/J1s9RoBWHo4sgdjUc3YXv++HggOss1YlGU2wbbbRRBsv6F6dER83rYeoGAAAAAElFTkSuQmCC"></a>
-                        <br><h5>Discord: (oosterlee#6041)</h5> <a href="javascript:alert('Username with id: oosterlee#6041')" title="Discord"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASzSURBVGhD7VhLiBxVFG0/qFHxCwERFdGNGxcK/la6kfgBUQkoovhBF4L4QRBJTBskyUxXl50hgxjTVTWTEEhmEdwYTILflVEIEoyiiYZkYzCKCv6iyX2e8/r2b+p2dfWkMz2LOnCYmrr3nHur6tWr97pUoECBAgUKjAqTk+78aiT3BrG8Wo2lVi670zXUF8wNIlkL7fJKJPePrXcXamh+UE7cOdW6PIImduIijlVj53B8EA1NhhvkEk3rC+ZC8xa0h+mBG/FfELuP6c0amjZ8TEzI2Sj2Moof0eb/YvOVKbleU0rBO3I1zt8FPoWLfK0auTE+KU8e4xxjPge51DjnTqtOuRsRW0dPf1GR/IjjF8sz7ixvPCwEdbkHTe9v3jmwGmyUxWPT7koMixdQ9D3w10Y8P6mhFn7P04ueqDPeetKoGSayRNs4OaDIREfhvfj/tjBxS/F3O3iiGTtZwvs4L4reGHY34SK+7Iit1XbmhrAud7SKRfIuzJeDfmidSvoakSzDjdrWPMdetK3BAcMv1PgXsmk6X0TNo+268pm2NRjCWO6ebTxqVupyp7aXHxiX71tmo6Vs1/byAS/btbgQsc1GSTmB6f4abbM/GvO/ZTR64gav0jaz4T9QsfxgmSwE4uXfr61mg3O4ZbCQOB7LDdpub+BpVCzxQmKu4YVHt8cSZxPLlkj+sGMZhAZNHTdjGUSPu7VdG6un5VLODJbYom+CC8GNch71WBfdgnPfWLmdZA54MzXcCuB4hfcyci0yt5a4i6g3wX2BJexFLhhV2oIuz3+y8knG1mx2F2t6C/Sy8nuxEst9Kk0DT6O1QOxH3JXD2BydqdIuZDclL2laF+gFz4O2xqLUVJqG39iYIouyTWUpcI9ia/wy41ZNSwFPa5OlMRnJBypLA0a5F4a4e1tUlkJtg1xnaTyxidK0FHBzYlNjkENUZd2AyRWWoBdxId+qNIVq3T1uachKIk9rWhf0Q7zP0vRiOCWXq7wN7gKt5CxyE6TyFvyWOJLvrHxPxJij6S0EiTxk5mfQ3D0OOmuQeCq/4xE/oBYlblVxV3dYud2UHcxVGaZtt5Redm4GE3lOLdpAQ+Nmch5GcgD8HB7/mHGLkfyN/N3g92Y8DyNZre23AcNpM3kBEz0n2n4beNy7rGRc9c+I/WnG5oWo7XtIxzAcd2r7beDkV1ayZySbwY/M2Kkka7K2FQPR815tvw1enZXcJOIB+ASMD1jxoZKzHqZw1AvNuJI9a/tt6O+4fe66fIJp+io/y8TyIf4f2u9a3gtf67AuD7IGjj+18xpkffas7XejvN6di6vcYglbxHiFybNcG735tlyGbfEzQeRmcP6QmZ9Fr5Gt9KCXX2/BmzXM/CYx3MKtskjb7g1+nGDYZ7ki+5D3aOfHjd8GrqVQ6GF+l+DxSuM3XzfGY/+tYgw5nd8ReoSRPIacr+1aDbIn9qayfPB7k0jegMFvsw07CfMjvJsqGxjU0sPy7iB6kJXcIqhscExskgtg8iS4CwX/TReRlZo6Z2Bovj7bt1ELNTHBsAdNHQ78O5S423WIrEOh2syMO0PDcwY96EVPPyRRI9c7UKBAgQIFCgwFpdL/4vlsS8kwnBEAAAAASUVORK5CYII="></a>
-                        <br><h5>Mail: (roy@famoosterlee.nl)</h5> <a href="mailto:roy@famoosterlee.nl" title="Normal mail"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK5SURBVGhD7Zj9TtNQGMZ3LyZ6GRhvx+i/OCRqCInfEb8GGhhb2AKOOESyQZDNyCCsm2thzLas05sw/kXi8TyH02Wrp0vZ2q2B8yS/ZFnf8z7P27SnTSNSUlJSUlJSl0FHxq9rqmFNaIYVU03r3ShhGWgWZOLxvEk1Wrc1s3VKISHjtGZYt3jM3jo0Wzfo9H8FTUIBy2ZY13lcd6XzhWq5bgibhAFkS+WKCo/rrocLy38ezC6Rrb2qsNEoQSZkQ0Ye113PEqu/78zMk+jLBZJY3yb0mhQ2HSbIkPy8zTIhGzLyuO6qNE4a89lNtgA8WcyQknosNBgG8H6ayLTzIBsy8rjuottdHQ02vpXJvbcJtnjyzSJZK+4LjYIEnvBGBmRBJvyPjDyuu+xBwL72gzxPrrbPxmxmg1QbJ11mQUDPOPOyfZEBWezj5x6ELaLXZzq3074+p9+nSUFR28f9pqBozANe8IQ3MnTW9DWIzZeDGpmaSzGDCWqwvPn1P4NBQC/0RG94wAuewtpBBgGVY5PEVtaZEZhZypKDui6sPQ/ogV52X3jAS1QLBh7EJruzR+6+OrsJ78eSJF9ShHVeyJcqrAd6oSd6i+o68W0QsFs7Io/iKyxAlBJf2yLf9aawVgRqsQZr0QO90FNU68TXQYAzzGOPYVCD2n5Pgu+D2OR2Fc+XB45Nvo6zWqzBWlFdLwIbBOCGfZH6yAIC5w3r3ChQ2+9GEegg4GwLLXZvoeUao3vrLg60dQc+iA0emJ0PNb8fpkMbBOBVZq7jNQO//Xq9GeogNp/oix8QHeuXkQwSBHKQsHHJBjFammhxmEBGHtddtDDjXBg26CAfeFx34eMXfeqG+gOdqjfHeNzewmdJuiiUn0w107rJY3rTof7zqqpb0bB8xKZDjFebzSs8npSUlJSUlNQFViTyD+G3jecel3H9AAAAAElFTkSuQmCC"></a>
-                        <br><h5>Gmail: (roymcraft@gmail.com)</h5> <a href="mailto:roymcraft@gmail.com" title="Gmail"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARbSURBVGhD7ZjbT1xVFMZ5M/E/8C9pE31oU/qkDZamWsNEilWrKEpomhIvNGmot15iiVqNt1YxUtISIibY2BpJJCkMaimMZWa4zH3OPgyXysyjLPc3OefMnpk1cGY4h/JwVvJLJsPa3/q+OXvvAeq88sorr7zaEbV+6dIjWirlSyQS7+5E4A0eDbt8ab1XA6K5iTJd71A2maBcLrejgCd4E80+Er3fTxm2iyt9re+W1vAkmYimZ2n1t9us4MMAXuBJ9Sg93zTsF0q0t62rTSaZ8x9SLpNhxbcFORseOG+i400y7BdKHGtmm4F+7Cg9mPDzg1wEMzGb8wTg2bBfqNTJE2yzxdNP0fKXX1B2dZUd6iSYgVmYyXoxgGfDfqH89fXr6Y52doGK3tZKa8EZ1oATQBszuNkq6RPtNLF/f3mQ8T171sd37aLIG22kPdPILjYRhw/SSv81ymWzrJmakFrQhDY300J6g0d49e/dWzkICBxqJNH6Mi+ksPjWKVqLxXhjVQANaHEzVOAJ3kyfmwYBE088TukL50g7eIAVtXjuMD349SZr0A5YCw1W2wQeLp7Pe1I92goCAv39FL19i8QLlW80k6UPzlJW11mzHOjFGk5LBbOTI79TcGCgyBuwHWTmxg0KBoMUvjdJ4r1udpCK3vI8/Tt2hzWugh70choq+vtnKSYPfyQS2VoQLJ6fn8+HAYmB66Qd2WQb4Jr+/FPKrqyUBcB7+Nlm12p+xk+D+QAmWw4CkdnZWSvMPL6kTnbwBhT01uO0Fpi2QuA13uN6VaAdn7xbFMKxICAcDlthgvfvU/qbr0hrbGDNmIhDDbTy4w958JrrsZBa+tVvKSJ3gBrAxLEgCwsLFAqFCmEk0ZEREsdf5I1VATSSo6NFxktxLAhQz4vJbCBA4sJHrEE76BfPUVR+QOocDkeDAC4MSPw8RMJ3hDXLke/9ZbhMvxKOBwHq4VeZ++tPEja+ofW3Oyk+PcVqV8KVIKDo8KvMzFC69zv2dya8p8uDH5HnjdPcCNeCgIphJJHRP0i89ooVQn/9VUqOj7E6dnA1CG4yLoRJSF4EWs/HpH/SQ7G5OVbDLq4GATj8pdeyCZ5YPB5n11WL60HAnPy0S0PgaUWjUba/FrYlCFBvMicDmGxbEIAn49RWKmXbgiQSCVpcXHTlaQDXg8C4pmm0vLycx60wrgaJyb+1M5mMFcIEwbj+reBaEGylpaWlshAmyWSSXVcrrgRRt9JGOHnwbQfx19f/V9pYGqTSVqoEep06L1wQ9h90fzc1ZUob1SCpVIo1uxm6rhcZqhUuyN2WlvIg011dp8Z37y5qNIMIIViTdkmn02XGqqUsiPQa6uu7Y9gvrsnOzh7/vn3WFgsPDla1lTYClwNn0C5qEGyp4JUrC4ZtviZOn350qrv7wL0zZ3zRsbGj8mD7HOIlefg/k+fsci1EJie/lmGuh4eGLv8zPPyYYdcrr7zyyquHWXV1/wNpZ38BW+CXNQAAAABJRU5ErkJggg=="></a>
+                        <br><h5>Skype: (royoost)</h5> <a href="skype:royoost?add" onclick="alert('I rarely use skype. Better to use Discord or Email.')" title="Skype (Not in use)" rel="nofollow"><img alt="alt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVNSURBVGhD7Vnpb1RVFH/OqKlLVKJgjB9QIyZq4pL4ySURMeoHrSYaBGtMXD5bSKNGE0Mwxj9AQY1QaqIyb6DD4EJbkLWUzZDiggSkCsEFFwJM75t9uf7O69HOcl7ffTPTCR/ml/wyk+l95/7Ou+eec+6t1UYbbTQRn52dEbJVV9hWvfgcBPeDu8NRJ4LPRVYkfR2PPEcRc66B2OXhqMrhU3vSVqVQVK0HF2PsilDU+RrcBY6EbGcTfluF769h3INWtHQRW28NwnbyibDtjIvCG6JKk9PhSPJxa4kO8XTTAwoXTFiUhTSVRzBXl6X1eTx180BvikJFmHTaiLAbtvoTc1hCE7BaXY1wUtJkLWACq7OAlTQGOPG+MEHrSEnDVj0sp07Ez1wBQ1lxghYTme5VVhUctOkko0F4w5dJvXB3Rr/1Y06/+1NOfzCW0+8cyunn92X0rQMp8RmRE+l8PksLBjzcKxr14QVrHN21J6NHTxe1Hw6PF3XPgay+LCbbqmKirgQwUbhEg56cFU/qLX8WWKY5TiRL+qHtadFmOZHNdgROzVjKUcmYFy9e6xitghdyePTJERNn1DMs0QzYI9Q7icYkLj2YY0mVIIG0Sqt+yeuPj+X1ZnzPePh7KlvSV65Livb/p+0cDtQB4KFIjREPXoh98XuqxHImse9UUV+PDV89/iqE4IdjeR5ViUeH/VclHE12skx/YAm7ZSO1vPGrJMuoxC0+menN77M8chL3bzXaKzGWaQC04qatyX1b0ixjElmEz/nC2Gq+8V3WDb8CFnTZ0ZzRM9RoWn26g5X6w+1KRUOVvH0oxfIr0T2aFcdX85L+iWQh/c2TtprLMv0BR3CeEIxUcQY2aLF2i7gYOllwiyKlZunZeknnGZbpD3i9UjIicSMETwXy81Ci6GavF1DZbw5S2SVCG8v0B1ZkSDQi8I6NKZ0MWAtPpku6F47dszm4U9A2wDL9geq+UzLixXnb0q64erDhj4K+9nPz8CNtLNMfQR0hzsReeBtNolRX/HBUFY2dcdsVU6C6D0pGTEjN490ImSU/ZPXWvwo6ZRh2637Ni/aqSRmVZfoDG6pPMlIPKcU+gNCjVmbkn4K7+SXQ7zdtMNozy1mmPyjFCQaaQspaBzyazJe+yYjPlBMr8jLL9Ec4ouZJRiQuQK0Y/rugB7FpKaSkMdW8zaOQLj3oX0gDhRZdniG8MpKhctJpj1qM/3A2V3KrvTS2nNQ8SnjlW4OOAO2T1Z+azUr9Ac/joqEyPo3VqMZxHJZmfzF1BnoRISShc6dJB+yuSjfL9Id7wygYKeedKIYSyJlHdqRrGkHKaM/tzYgFVOVL+lIkhvLxU/BTlmkAHGLwwJEqAzWkFOuFn52Sjv9WcM8gnxzP6zHUCy/QRYVkXyId/lilGbCEz0qGyklhdAyCGwElC0rTkn2J0DXKEg2BAz9S8bBkrJxUlanbrQfRE3m3i5bsehGODLHCAOhPzDG9jX94e1qvhbC0j090oFqPkDO5QRFpq49YXTDgDcyntCcaFdiBw9Jdm1LuxqZD1us4DdI9FmWre3GqDLCpRWKP1H83TNeXktGW01ZZa83py1lWfcCb6AmyMtNC23mP5TSGcHT8KRhM1EzQCtrOGSumZrGUJgAJgM4F4mTTRVsVAt1rGcNNzWoh3QCKEzeVqoi5zNuSuuB2AMlOrFCM7p1kIQ0xgXbpMZ6tRejTHQiBuW6Gs9VKOmnCwRGXE/+eXoE3uxiM+yYN6r5tZ5kVHZ/J1s9RoBWHo4sgdjUc3YXv++HggOss1YlGU2wbbbRRBsv6F6dER83rYeoGAAAAAElFTkSuQmCC"></a>
+                        <br><h5>Discord: (oosterlee#6041)</h5> <a href="javascript:alert('Username with id: oosterlee#6041')" title="Discord" rel="nofollow"><img alt="alt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASzSURBVGhD7VhLiBxVFG0/qFHxCwERFdGNGxcK/la6kfgBUQkoovhBF4L4QRBJTBskyUxXl50hgxjTVTWTEEhmEdwYTILflVEIEoyiiYZkYzCKCv6iyX2e8/r2b+p2dfWkMz2LOnCYmrr3nHur6tWr97pUoECBAgUKjAqTk+78aiT3BrG8Wo2lVi670zXUF8wNIlkL7fJKJPePrXcXamh+UE7cOdW6PIImduIijlVj53B8EA1NhhvkEk3rC+ZC8xa0h+mBG/FfELuP6c0amjZ8TEzI2Sj2Moof0eb/YvOVKbleU0rBO3I1zt8FPoWLfK0auTE+KU8e4xxjPge51DjnTqtOuRsRW0dPf1GR/IjjF8sz7ixvPCwEdbkHTe9v3jmwGmyUxWPT7koMixdQ9D3w10Y8P6mhFn7P04ueqDPeetKoGSayRNs4OaDIREfhvfj/tjBxS/F3O3iiGTtZwvs4L4reGHY34SK+7Iit1XbmhrAud7SKRfIuzJeDfmidSvoakSzDjdrWPMdetK3BAcMv1PgXsmk6X0TNo+268pm2NRjCWO6ebTxqVupyp7aXHxiX71tmo6Vs1/byAS/btbgQsc1GSTmB6f4abbM/GvO/ZTR64gav0jaz4T9QsfxgmSwE4uXfr61mg3O4ZbCQOB7LDdpub+BpVCzxQmKu4YVHt8cSZxPLlkj+sGMZhAZNHTdjGUSPu7VdG6un5VLODJbYom+CC8GNch71WBfdgnPfWLmdZA54MzXcCuB4hfcyci0yt5a4i6g3wX2BJexFLhhV2oIuz3+y8knG1mx2F2t6C/Sy8nuxEst9Kk0DT6O1QOxH3JXD2BydqdIuZDclL2laF+gFz4O2xqLUVJqG39iYIouyTWUpcI9ia/wy41ZNSwFPa5OlMRnJBypLA0a5F4a4e1tUlkJtg1xnaTyxidK0FHBzYlNjkENUZd2AyRWWoBdxId+qNIVq3T1uachKIk9rWhf0Q7zP0vRiOCWXq7wN7gKt5CxyE6TyFvyWOJLvrHxPxJij6S0EiTxk5mfQ3D0OOmuQeCq/4xE/oBYlblVxV3dYud2UHcxVGaZtt5Redm4GE3lOLdpAQ+Nmch5GcgD8HB7/mHGLkfyN/N3g92Y8DyNZre23AcNpM3kBEz0n2n4beNy7rGRc9c+I/WnG5oWo7XtIxzAcd2r7beDkV1ayZySbwY/M2Kkka7K2FQPR815tvw1enZXcJOIB+ASMD1jxoZKzHqZw1AvNuJI9a/tt6O+4fe66fIJp+io/y8TyIf4f2u9a3gtf67AuD7IGjj+18xpkffas7XejvN6di6vcYglbxHiFybNcG735tlyGbfEzQeRmcP6QmZ9Fr5Gt9KCXX2/BmzXM/CYx3MKtskjb7g1+nGDYZ7ki+5D3aOfHjd8GrqVQ6GF+l+DxSuM3XzfGY/+tYgw5nd8ReoSRPIacr+1aDbIn9qayfPB7k0jegMFvsw07CfMjvJsqGxjU0sPy7iB6kJXcIqhscExskgtg8iS4CwX/TReRlZo6Z2Bovj7bt1ELNTHBsAdNHQ78O5S423WIrEOh2syMO0PDcwY96EVPPyRRI9c7UKBAgQIFCgwFpdL/4vlsS8kwnBEAAAAASUVORK5CYII="></a>
+                        <br><h5>Mail: (roy@famoosterlee.nl)</h5> <a href="mailto:roy@famoosterlee.nl" title="Normal mail" rel="nofollow"><img alt="alt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK5SURBVGhD7Zj9TtNQGMZ3LyZ6GRhvx+i/OCRqCInfEb8GGhhb2AKOOESyQZDNyCCsm2thzLas05sw/kXi8TyH02Wrp0vZ2q2B8yS/ZFnf8z7P27SnTSNSUlJSUlJSl0FHxq9rqmFNaIYVU03r3ShhGWgWZOLxvEk1Wrc1s3VKISHjtGZYt3jM3jo0Wzfo9H8FTUIBy2ZY13lcd6XzhWq5bgibhAFkS+WKCo/rrocLy38ezC6Rrb2qsNEoQSZkQ0Ye113PEqu/78zMk+jLBZJY3yb0mhQ2HSbIkPy8zTIhGzLyuO6qNE4a89lNtgA8WcyQknosNBgG8H6ayLTzIBsy8rjuottdHQ02vpXJvbcJtnjyzSJZK+4LjYIEnvBGBmRBJvyPjDyuu+xBwL72gzxPrrbPxmxmg1QbJ11mQUDPOPOyfZEBWezj5x6ELaLXZzq3074+p9+nSUFR28f9pqBozANe8IQ3MnTW9DWIzZeDGpmaSzGDCWqwvPn1P4NBQC/0RG94wAuewtpBBgGVY5PEVtaZEZhZypKDui6sPQ/ogV52X3jAS1QLBh7EJruzR+6+OrsJ78eSJF9ShHVeyJcqrAd6oSd6i+o68W0QsFs7Io/iKyxAlBJf2yLf9aawVgRqsQZr0QO90FNU68TXQYAzzGOPYVCD2n5Pgu+D2OR2Fc+XB45Nvo6zWqzBWlFdLwIbBOCGfZH6yAIC5w3r3ChQ2+9GEegg4GwLLXZvoeUao3vrLg60dQc+iA0emJ0PNb8fpkMbBOBVZq7jNQO//Xq9GeogNp/oix8QHeuXkQwSBHKQsHHJBjFammhxmEBGHtddtDDjXBg26CAfeFx34eMXfeqG+gOdqjfHeNzewmdJuiiUn0w107rJY3rTof7zqqpb0bB8xKZDjFebzSs8npSUlJSUlNQFViTyD+G3jecel3H9AAAAAElFTkSuQmCC"></a>
+                        <br><h5>Gmail: (roymcraft@gmail.com)</h5> <a href="mailto:roymcraft@gmail.com" title="Gmail" rel="nofollow"><img  alt="alt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARbSURBVGhD7ZjbT1xVFMZ5M/E/8C9pE31oU/qkDZamWsNEilWrKEpomhIvNGmot15iiVqNt1YxUtISIibY2BpJJCkMaimMZWa4zH3OPgyXysyjLPc3OefMnpk1cGY4h/JwVvJLJsPa3/q+OXvvAeq88sorr7zaEbV+6dIjWirlSyQS7+5E4A0eDbt8ab1XA6K5iTJd71A2maBcLrejgCd4E80+Er3fTxm2iyt9re+W1vAkmYimZ2n1t9us4MMAXuBJ9Sg93zTsF0q0t62rTSaZ8x9SLpNhxbcFORseOG+i400y7BdKHGtmm4F+7Cg9mPDzg1wEMzGb8wTg2bBfqNTJE2yzxdNP0fKXX1B2dZUd6iSYgVmYyXoxgGfDfqH89fXr6Y52doGK3tZKa8EZ1oATQBszuNkq6RPtNLF/f3mQ8T171sd37aLIG22kPdPILjYRhw/SSv81ymWzrJmakFrQhDY300J6g0d49e/dWzkICBxqJNH6Mi+ksPjWKVqLxXhjVQANaHEzVOAJ3kyfmwYBE088TukL50g7eIAVtXjuMD349SZr0A5YCw1W2wQeLp7Pe1I92goCAv39FL19i8QLlW80k6UPzlJW11mzHOjFGk5LBbOTI79TcGCgyBuwHWTmxg0KBoMUvjdJ4r1udpCK3vI8/Tt2hzWugh70choq+vtnKSYPfyQS2VoQLJ6fn8+HAYmB66Qd2WQb4Jr+/FPKrqyUBcB7+Nlm12p+xk+D+QAmWw4CkdnZWSvMPL6kTnbwBhT01uO0Fpi2QuA13uN6VaAdn7xbFMKxICAcDlthgvfvU/qbr0hrbGDNmIhDDbTy4w958JrrsZBa+tVvKSJ3gBrAxLEgCwsLFAqFCmEk0ZEREsdf5I1VATSSo6NFxktxLAhQz4vJbCBA4sJHrEE76BfPUVR+QOocDkeDAC4MSPw8RMJ3hDXLke/9ZbhMvxKOBwHq4VeZ++tPEja+ofW3Oyk+PcVqV8KVIKDo8KvMzFC69zv2dya8p8uDH5HnjdPcCNeCgIphJJHRP0i89ooVQn/9VUqOj7E6dnA1CG4yLoRJSF4EWs/HpH/SQ7G5OVbDLq4GATj8pdeyCZ5YPB5n11WL60HAnPy0S0PgaUWjUba/FrYlCFBvMicDmGxbEIAn49RWKmXbgiQSCVpcXHTlaQDXg8C4pmm0vLycx60wrgaJyb+1M5mMFcIEwbj+reBaEGylpaWlshAmyWSSXVcrrgRRt9JGOHnwbQfx19f/V9pYGqTSVqoEep06L1wQ9h90fzc1ZUob1SCpVIo1uxm6rhcZqhUuyN2WlvIg011dp8Z37y5qNIMIIViTdkmn02XGqqUsiPQa6uu7Y9gvrsnOzh7/vn3WFgsPDla1lTYClwNn0C5qEGyp4JUrC4ZtviZOn350qrv7wL0zZ3zRsbGj8mD7HOIlefg/k+fsci1EJie/lmGuh4eGLv8zPPyYYdcrr7zyyquHWXV1/wNpZ38BW+CXNQAAAABJRU5ErkJggg=="></a>
                     </div>
                 </div>
 
                 <div>
                     Share:
-                    <p><a href="https://www.facebook.com/sharer/sharer.php?u=marcoosterlee.no-ip.org%2FPortfolio">Facebook</a></p>
-                    <p><a href="https://twitter.com/intent/tweet?url=marcoosterlee.no-ip.org%2FPortfolio&text=Portfolio%20-%20Roy%20Oosterlee">Twitter</a></p>
-                    <p><a href="https://plus.google.com/share?url=marcoosterlee.no-ip.org%2FPortfolio">Google+</a></p>
-                    <p><a href="http://www.linkedin.com/shareArticle?mini=true&url=marcoosterlee.no-ip.org%2FPortfolio&title=Portfolio%20-%20Roy%20Oosterlee">LinkedIn</a></p>
-                    <p><a href="http://pinterest.com/pin/create/button/?url=marcoosterlee.no-ip.org%2FPortfolio&description=Portfolio%20-%20Roy%20Oosterlee">Pinterest</a></p>
-                    <p><a href="http://www.tumblr.com/share?v=3&u=marcoosterlee.no-ip.org%2FPortfolio&t=Portfolio%20-%20Roy%20Oosterlee">Tumblr</a></p>
+                    <button><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F24868.hosts.ma-cloud.nl%2Fbewijzenmap%2FPortfolio%2F" rel="nofollow">Facebook</a></button>
+                    <button><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2F24868.hosts.ma-cloud.nl%2Fbewijzenmap%2FPortfolio%2F&text=Portfolio%20from%20Roy%20Oosterlee%20-%20Web%20Developer" rel="nofollow">Twitter</a></button>
+                    <button><a href="https://plus.google.com/share?url=http%3A%2F%2F24868.hosts.ma-cloud.nl%2Fbewijzenmap%2FPortfolio%2F" rel="nofollow">Google+</a></button>
+                    <button><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F24868.hosts.ma-cloud.nl%2Fbewijzenmap%2FPortfolio%2F&title=Portfolio%20from%20Roy%20Oosterlee%20-%20Web%20Developer" rel="nofollow">LinkedIn</a></button>
+                    <button><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2F24868.hosts.ma-cloud.nl%2Fbewijzenmap%2FPortfolio%2F&description=Portfolio%20from%20Roy%20Oosterlee%20-%20Web%20Developer" rel="nofollow">Pinterest</a></button>
+                    <button><a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2F24868.hosts.ma-cloud.nl%2Fbewijzenmap%2FPortfolio%2F&t=Portfolio%20from%20Roy%20Oosterlee%20-%20Web%20Developer" rel="nofollow">Tumblr</a></button>
                 </div>
 
-                <footer>Footer! <a href="https://icons8.com">Icons by Icons8</a></footer>
+                <footer>Footer! <a href="https://icons8.com" rel="nofollow">Icons by Icons8</a></footer>
             </div>
         </div>
         <div class="debug_output" style="display: none;">
